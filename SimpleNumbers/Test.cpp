@@ -28,7 +28,7 @@ bool Test::formulaFour(int n, int number)
 	std::cout << number << " < ";
 	std::cout << std::round(right);
 
-	std::string str = number ? "верно" : "не верно";
+	std::string str = result ? "верно" : "не верно";
 	std::cout << " - " << str << "\n";
 
 	return result;
