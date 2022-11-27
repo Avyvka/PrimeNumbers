@@ -24,6 +24,7 @@
     <ProjectGuid>{373601fd-9360-4139-9ab9-166e050def7b}</ProjectGuid>
     <RootNamespace>SimpleNumbers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PrimeNumbers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -104,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,15 +129,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="src\Test\Test.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SimpleNumbers.cpp" />
+    <ClCompile Include="src\PrimeNumber\PrimeNumber.cpp" />
+    <ClCompile Include="src\Math\Math.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Test.h" />
-    <ClInclude Include="Math.hpp" />
-    <ClInclude Include="PrintHelper.hpp" />
-    <ClInclude Include="SimpleNumbers.h" />
+    <ClInclude Include="src\Math\Math.h" />
+    <ClInclude Include="src\Test\Test.h" />
+    <ClInclude Include="src\PrintHelper\PrintHelper.hpp" />
+    <ClInclude Include="src\PrimeNumber\PrimeNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

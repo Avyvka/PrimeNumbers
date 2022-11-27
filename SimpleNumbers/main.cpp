@@ -1,14 +1,14 @@
 ﻿#include <iostream>
 #include <vector>
 
-#include "SimpleNumbers.h"
-#include "PrintHelper.hpp"
-#include "Math.hpp"
-#include "Test.h"
+#include "src/PrimeNumber/PrimeNumber.h"
+#include "src/PrintHelper/PrintHelper.hpp"
+#include "src/Math/Math.h"
+#include "src/Test/Test.h"
 
 void solution(int k1, int k2)
 {
-    SimpleNumbers simpleNumbers;
+    PrimeNumber primeNumber;
     PrintHelper printHelper;
     Test test;
     Math math;
@@ -18,14 +18,14 @@ void solution(int k1, int k2)
         int number;
         std::cout << "Привет. Напиши сюда какое-нибудь число, которое > 2: ";
         std::cin >> number;
-        std::string str = simpleNumbers.isPrime(number) ? "простое" : "не простое";
-        std::cout << number << " - " << str << " число" << "\n";
+        std::string result = primeNumber.is(number) ? "простое" : "не простое";
+        std::cout << number << " - " << result << " число" << "\n";
         std::cout << std::endl;
     }
 
     // 2
     {
-        int count = (int)simpleNumbers.getUpTo(k1).size();
+        int count = (int)primeNumber.getUpTo(k1).size();
         std::cout << "Простых чисел, меньших " << k1 << ": " << count << "\n";
         test.formulaTwoThree(k1, count);
         std::cout << std::endl;
@@ -33,15 +33,15 @@ void solution(int k1, int k2)
     
     // 3
     {
-        std::vector<int> firstNumbers = simpleNumbers.getFirst(100);
+        std::vector<unsigned int> firstPrimes = primeNumber.getFirst(100);
         std::cout << "Первые 100 простых чисел:" << "\n";
-        printHelper.printAsTable(firstNumbers);
+        printHelper.printAsTable(firstPrimes);
         std::cout << std::endl;
     }
 
     // 4 
     {
-        int number = simpleNumbers.get(k2);
+        unsigned int number = primeNumber.get(k2);
         std::cout << k2 << "-e простое число - это: " << number << "\n";
         test.formulaFour(k2, number);
         std::cout << std::endl;
@@ -49,19 +49,19 @@ void solution(int k1, int k2)
 
     // 5
     {
-        std::vector<int> firstNumbers = simpleNumbers.getFirst(100);
+        std::vector<unsigned int> firstPrimes = primeNumber.getFirst(100);
 
         std::cout << "Среднее арифметическое первых 100 простых чисел: ";
-        std::cout << math.arithmeticMean(firstNumbers) << "\n";
+        std::cout << math.arithmeticMean(firstPrimes) << "\n";
 
         std::cout << "Среднее геометрическое первых 100 простых чисел: ";
-        std::cout << math.geometricMean(firstNumbers) << "\n";
+        std::cout << math.geometricMean(firstPrimes) << "\n";
 
         std::cout << "Среднее квадратическое первых 100 простых чисел: ";
-        std::cout << math.rootMeanSquare(firstNumbers) << "\n";
+        std::cout << math.rootMeanSquare(firstPrimes) << "\n";
 
         std::cout << "Среднее гармоническое первых 100 простых чисел: ";
-        std::cout << math.harmonicMean(firstNumbers) << "\n";
+        std::cout << math.harmonicMean(firstPrimes) << "\n";
     }
 }
 
