@@ -7,25 +7,25 @@ class Math
 {
 public:
     /// <summary>
-    /// Вычисляет среднее арифметическое
+    /// Р’С‹С‡РёСЃР»СЏРµС‚ СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
     /// </summary>
     template<typename T>
     double arithmeticMean(const std::vector<T> vector);
 
     /// <summary>
-    /// Вычисляет среднее геометрическое
+    /// Р’С‹С‡РёСЃР»СЏРµС‚ СЃСЂРµРґРЅРµРµ РіРµРѕРјРµС‚СЂРёС‡РµСЃРєРѕРµ
     /// </summary>
     template<typename T>
     double geometricMean(const std::vector<T> vector);
 
     /// <summary>
-    /// Вычисляет среднее квадратическое
+    /// Р’С‹С‡РёСЃР»СЏРµС‚ СЃСЂРµРґРЅРµРµ РєРІР°РґСЂР°С‚РёС‡РµСЃРєРѕРµ
     /// </summary>
     template<typename T>
     double rootMeanSquare(const std::vector<T> vector);
 
     /// <summary>
-    /// Вычисляет среднее гармоническое
+    /// Р’С‹С‡РёСЃР»СЏРµС‚ СЃСЂРµРґРЅРµРµ РіР°СЂРјРѕРЅРёС‡РµСЃРєРѕРµ
     /// </summary>
     template<typename T>
     double harmonicMean(const std::vector<T> vector);
