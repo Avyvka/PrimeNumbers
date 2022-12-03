@@ -24,15 +24,15 @@
     <ClCompile Include="src\Test\Test.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="src\Math\Math.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PrimeNumber\PrimeNumber.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="src\PrintHelper\PrintHelper.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Math\Math.cpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="src\Test\Test.h">

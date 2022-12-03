@@ -33,7 +33,7 @@ void solution(int k1, int k2)
     
     // 3
     {
-        std::vector<unsigned int> firstPrimes = primeNumber.getFirst(100);
+        std::vector<unsigned int> firstPrimes = primeNumber.getFirsts(100);
         std::cout << "Первые 100 простых чисел:" << "\n";
         printHelper.printAsTable(firstPrimes);
         std::cout << std::endl;
@@ -49,7 +49,7 @@ void solution(int k1, int k2)
 
     // 5
     {
-        std::vector<unsigned int> firstPrimes = primeNumber.getFirst(100);
+        std::vector<unsigned int> firstPrimes = primeNumber.getFirsts(100);
 
         std::cout << "Среднее арифметическое первых 100 простых чисел: ";
         std::cout << math.arithmeticMean(firstPrimes) << "\n";

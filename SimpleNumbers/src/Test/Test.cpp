@@ -1,5 +1,10 @@
 #include "Test.h"
 
+/*
+		 n                         n
+	-----------  <  Count  <  -----------
+	ln(n) - 3/2               ln(n) - 1/2
+*/
 bool Test::formulaTwoThree(int n, int count)
 {
 	double left = n / (ln(n) - 1.0 / 2);
@@ -17,7 +22,10 @@ bool Test::formulaTwoThree(int n, int count)
 	return result;
 }
 
-bool Test::formulaFour(int n, int number)
+/*
+	n( ln(n) + ln(ln(n)) - 3/2 )  <  number  <  n( ln(n) + ln(ln(n)) - 1/2 )
+*/
+bool Test::formulaFour(int n, unsigned int number)
 {
 	double left = n * (ln(n) + ln(ln(n)) - 3.0 / 2);
 	double right = n * (ln(n) + ln(ln(n)) - 1.0 / 2);

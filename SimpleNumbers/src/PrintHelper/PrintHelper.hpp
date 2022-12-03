@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 
-#define MAX_TABLE_COLUMNS 15
+constexpr auto MAX_TABLE_COLUMNS = 15;
 
 class PrintHelper
 {

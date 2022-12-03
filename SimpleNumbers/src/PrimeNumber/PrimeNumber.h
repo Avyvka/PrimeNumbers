@@ -25,7 +25,7 @@ public:
 	/// </summary>
 	/// <param name="count">Количество простых чисел</param>
 	/// <returns>Массив простых чисел</returns>
-	std::vector<unsigned int> getFirst(unsigned int count);
+	std::vector<unsigned int> getFirsts(unsigned int count);
 
 	/// <summary>
 	/// Возвращает простое число по порядковому номеру

@@ -13,11 +13,11 @@ double Math::arithmeticMean(std::vector<T> vector)
 template<typename T>
 double Math::geometricMean(const std::vector<T> vector)
 {
-	double result = 1;
+	double product = 1;
 
-	for (double element : vector) result *= element;
+	for (double element : vector) product *= element;
 
-	return std::pow(result, 1.0 / vector.size());
+	return std::pow(product, 1.0 / vector.size());
 }
 
 template<typename T>
