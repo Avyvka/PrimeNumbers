@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{373601fd-9360-4139-9ab9-166e050def7b}</ProjectGuid>
-    <RootNamespace>SimpleNumbers</RootNamespace>
+    <RootNamespace>PrimeNumbers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>PrimeNumbers</ProjectName>
   </PropertyGroup>

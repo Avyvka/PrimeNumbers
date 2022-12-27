@@ -49,18 +49,20 @@ void solution(int k1, int k2)
 
     // 5
     {
-        std::vector<unsigned int> firstPrimes = primeNumber.getFirsts(100);
+        int count = 100;
 
-        std::cout << "Среднее арифметическое первых 100 простых чисел: ";
+        std::vector<unsigned int> firstPrimes = primeNumber.getFirsts(count);
+
+        std::cout << "Среднее арифметическое первых " << count << " простых чисел: ";
         std::cout << math.arithmeticMean(firstPrimes) << "\n";
 
-        std::cout << "Среднее геометрическое первых 100 простых чисел: ";
+        std::cout << "Среднее геометрическое первых " << count << " простых чисел: ";
         std::cout << math.geometricMean(firstPrimes) << "\n";
 
-        std::cout << "Среднее квадратическое первых 100 простых чисел: ";
+        std::cout << "Среднее квадратическое первых " << count << " простых чисел: ";
         std::cout << math.rootMeanSquare(firstPrimes) << "\n";
 
-        std::cout << "Среднее гармоническое первых 100 простых чисел: ";
+        std::cout << "Среднее гармоническое первых " << count << " простых чисел: ";
         std::cout << math.harmonicMean(firstPrimes) << "\n";
     }
 }
