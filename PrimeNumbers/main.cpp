@@ -1,4 +1,4 @@
-Ôªø#include <iostream>
+#include <iostream>
 #include <vector>
 
 #include "src/PrimeNumber/PrimeNumber.h"
@@ -16,17 +16,17 @@ void solution(int k1, int k2)
     // 1
     {
         int number;
-        std::cout << "–ü—Ä–∏–≤–µ—Ç. –ù–∞–ø–∏—à–∏ —Å—é–¥–∞ –∫–∞–∫–æ–µ-–Ω–∏–±—É–¥—å —á–∏—Å–ª–æ, –∫–æ—Ç–æ—Ä–æ–µ > 2: ";
+        std::cout << "œË‚ÂÚ. Õ‡ÔË¯Ë Ò˛‰‡ Í‡ÍÓÂ-ÌË·Û‰¸ ˜ËÒÎÓ, ÍÓÚÓÓÂ > 2: ";
         std::cin >> number;
-        std::string result = primeNumber.is(number) ? "–ø—Ä–æ—Å—Ç–æ–µ" : "–Ω–µ –ø—Ä–æ—Å—Ç–æ–µ";
-        std::cout << number << " - " << result << " —á–∏—Å–ª–æ" << "\n";
+        std::string result = primeNumber.is(number) ? "ÔÓÒÚÓÂ" : "ÌÂ ÔÓÒÚÓÂ";
+        std::cout << number << " - " << result << " ˜ËÒÎÓ" << "\n";
         std::cout << std::endl;
     }
 
     // 2
     {
         int count = (int)primeNumber.getUpTo(k1).size();
-        std::cout << "–ü—Ä–æ—Å—Ç—ã—Ö —á–∏—Å–µ–ª, –º–µ–Ω—å—à–∏—Ö " << k1 << ": " << count << "\n";
+        std::cout << "œÓÒÚ˚ı ˜ËÒÂÎ, ÏÂÌ¸¯Ëı " << k1 << ": " << count << "\n";
         test.formulaTwoThree(k1, count);
         std::cout << std::endl;
     }
@@ -34,7 +34,7 @@ void solution(int k1, int k2)
     // 3
     {
         std::vector<unsigned int> firstPrimes = primeNumber.getFirsts(100);
-        std::cout << "–ü–µ—Ä–≤—ã–µ 100 –ø—Ä–æ—Å—Ç—ã—Ö —á–∏—Å–µ–ª:" << "\n";
+        std::cout << "œÂ‚˚Â 100 ÔÓÒÚ˚ı ˜ËÒÂÎ:" << "\n";
         printHelper.printAsTable(firstPrimes);
         std::cout << std::endl;
     }
@@ -42,7 +42,7 @@ void solution(int k1, int k2)
     // 4 
     {
         unsigned int number = primeNumber.get(k2);
-        std::cout << k2 << "-e –ø—Ä–æ—Å—Ç–æ–µ —á–∏—Å–ª–æ - —ç—Ç–æ: " << number << "\n";
+        std::cout << k2 << "-e ÔÓÒÚÓÂ ˜ËÒÎÓ - ˝ÚÓ: " << number << "\n";
         test.formulaFour(k2, number);
         std::cout << std::endl;
     }
@@ -53,16 +53,16 @@ void solution(int k1, int k2)
 
         std::vector<unsigned int> firstPrimes = primeNumber.getFirsts(count);
 
-        std::cout << "–°—Ä–µ–¥–Ω–µ–µ –∞—Ä–∏—Ñ–º–µ—Ç–∏—á–µ—Å–∫–æ–µ –ø–µ—Ä–≤—ã—Ö " << count << " –ø—Ä–æ—Å—Ç—ã—Ö —á–∏—Å–µ–ª: ";
+        std::cout << "—Â‰ÌÂÂ ‡ËÙÏÂÚË˜ÂÒÍÓÂ ÔÂ‚˚ı " << count << " ÔÓÒÚ˚ı ˜ËÒÂÎ: ";
         std::cout << math.arithmeticMean(firstPrimes) << "\n";
 
-        std::cout << "–°—Ä–µ–¥–Ω–µ–µ –≥–µ–æ–º–µ—Ç—Ä–∏—á–µ—Å–∫–æ–µ –ø–µ—Ä–≤—ã—Ö " << count << " –ø—Ä–æ—Å—Ç—ã—Ö —á–∏—Å–µ–ª: ";
+        std::cout << "—Â‰ÌÂÂ „ÂÓÏÂÚË˜ÂÒÍÓÂ ÔÂ‚˚ı " << count << " ÔÓÒÚ˚ı ˜ËÒÂÎ: ";
         std::cout << math.geometricMean(firstPrimes) << "\n";
 
-        std::cout << "–°—Ä–µ–¥–Ω–µ–µ –∫–≤–∞–¥—Ä–∞—Ç–∏—á–µ—Å–∫–æ–µ –ø–µ—Ä–≤—ã—Ö " << count << " –ø—Ä–æ—Å—Ç—ã—Ö —á–∏—Å–µ–ª: ";
+        std::cout << "—Â‰ÌÂÂ Í‚‡‰‡ÚË˜ÂÒÍÓÂ ÔÂ‚˚ı " << count << " ÔÓÒÚ˚ı ˜ËÒÂÎ: ";
         std::cout << math.rootMeanSquare(firstPrimes) << "\n";
 
-        std::cout << "–°—Ä–µ–¥–Ω–µ–µ –≥–∞—Ä–º–æ–Ω–∏—á–µ—Å–∫–æ–µ –ø–µ—Ä–≤—ã—Ö " << count << " –ø—Ä–æ—Å—Ç—ã—Ö —á–∏—Å–µ–ª: ";
+        std::cout << "—Â‰ÌÂÂ „‡ÏÓÌË˜ÂÒÍÓÂ ÔÂ‚˚ı " << count << " ÔÓÒÚ˚ı ˜ËÒÂÎ: ";
         std::cout << math.harmonicMean(firstPrimes) << "\n";
     }
 }
