@@ -3,7 +3,7 @@
 #include <vector>
 #include <cmath>
 
-class PrimeNumber
+class PrimeNumbers
 {
 public:
     /// <summary>
@@ -11,7 +11,7 @@ public:
     /// </summary>
     /// <param name="number">- проверяемое число</param>
     /// <returns>true - Простое / false - Нет</returns>
-    bool is(unsigned int number);
+    bool has(unsigned int number);
 
     /// <summary>
     /// Возвращает простые числа до некоторого числа

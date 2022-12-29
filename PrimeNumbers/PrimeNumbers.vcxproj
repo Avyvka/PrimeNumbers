@@ -133,14 +133,14 @@
   <ItemGroup>
     <ClCompile Include="src\Test\Test.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\PrimeNumber\PrimeNumber.cpp" />
+    <ClCompile Include="src\PrimeNumbers\PrimeNumbers.cpp" />
     <ClCompile Include="src\Math\Math.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Math\Math.h" />
     <ClInclude Include="src\Test\Test.h" />
     <ClInclude Include="src\PrintHelper\PrintHelper.hpp" />
-    <ClInclude Include="src\PrimeNumber\PrimeNumber.h" />
+    <ClInclude Include="src\PrimeNumbers\PrimeNumbers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

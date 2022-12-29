@@ -1,8 +1,8 @@
-#include "PrimeNumber.h"
+#include "PrimeNumbers.h"
 
 constexpr auto FIRST_PRIMAL_NUMBER = 2;
 
-bool PrimeNumber::is(unsigned int number)
+bool PrimeNumbers::has(unsigned int number)
 {   
     // 1,0 и меньше - не простые числа
     if (number < FIRST_PRIMAL_NUMBER) return false;
@@ -19,36 +19,36 @@ bool PrimeNumber::is(unsigned int number)
     return true;
 }
 
-std::vector<unsigned int> PrimeNumber::getUpTo(unsigned int last)
+std::vector<unsigned int> PrimeNumbers::getUpTo(unsigned int last)
 {
     std::vector<unsigned int> result;
 
     for (unsigned int number = FIRST_PRIMAL_NUMBER; number <= last; number++)
     {
-        if (is(number)) result.push_back(number);
+        if (has(number)) result.push_back(number);
     }
 
     return result;
 }
 
-std::vector<unsigned int> PrimeNumber::getFirsts(unsigned int count)
+std::vector<unsigned int> PrimeNumbers::getFirsts(unsigned int count)
 {
     std::vector<unsigned int> result;
 
     for (unsigned int number = FIRST_PRIMAL_NUMBER; result.size() < count; number++)
     {
-        if (is(number)) result.push_back(number);
+        if (has(number)) result.push_back(number);
     }
 
     return result;
 }
 
-unsigned int PrimeNumber::get(unsigned int n)
+unsigned int PrimeNumbers::get(unsigned int n)
 {
     int counter = 0;
 
     for (unsigned int number = FIRST_PRIMAL_NUMBER; ; number++)
     {
-        if (is(number) && ++counter == n) return number;
+        if (has(number) && ++counter == n) return number;
     }
 }
